@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Universal Login URL
- * Plugin URI:  https://example.com/universal-login-url
+ * Plugin URI:  https://luiscabre.com
  * Description: Configure a custom WordPress login path. Access protection is enabled only after the custom login route is configured.
  * Version:     1.0.0
  * Requires at least: 6.4
