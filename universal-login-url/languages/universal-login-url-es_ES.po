@@ -1,0 +1,89 @@
+msgid ""
+msgstr "Project-Id-Version: Universal Login URL 1.0.0\\nReport-Msgid-Bugs-To: \\nPOT-Creation-Date: 2026-10-22 00:00+0000\\nPO-Revision-Date: 2026-10-22 00:00+0000\\nLanguage: es_ES\\nMIME-Version: 1.0\\nContent-Type: text/plain; charset=UTF-8\\nContent-Transfer-Encoding: 8bit\\nPlural-Forms: nplurals=2; plural=(n != 1);\\nX-Generator: ChatGPT\\n"
+
+msgid "A custom login URL is not a substitute for strong passwords, regular backups, and other security measures."
+msgstr "Una URL de acceso personalizada no sustituye las contraseñas seguras, las copias de seguridad periódicas ni otras medidas de seguridad."
+
+msgid "Back to website"
+msgstr "Volver al sitio web"
+
+msgid "Before saving your changes or logging out, write down the custom slug you enter in the field above and save the complete login URL in a secure location."
+msgstr "Antes de guardar los cambios o cerrar sesión, anota la ruta personalizada que introdujiste arriba y guarda la URL de acceso completa en un lugar seguro."
+
+msgid "Choose the custom path you will use to access your WordPress login page."
+msgstr "Elige la ruta personalizada que utilizarás para acceder al inicio de sesión de WordPress."
+
+msgid "Configured login URL preview"
+msgstr "Vista previa de la URL de acceso configurada"
+
+msgid "Custom Login Slug"
+msgstr "Ruta de acceso personalizada"
+
+msgid "Custom login slug"
+msgstr "Ruta de acceso personalizada"
+
+msgid "Enter a valid slug using lowercase letters, numbers, and single hyphens. The slug must not conflict with a reserved route."
+msgstr "Introduce una ruta válida con letras minúsculas, números y guiones simples. La ruta no debe coincidir con una ruta reservada."
+
+msgid "Enter your custom slug"
+msgstr "Introduce tu ruta personalizada"
+
+msgid "For example, you can choose a custom path such as custom-login, private-access, or something similar. Use lowercase letters, numbers, and hyphens."
+msgstr "Por ejemplo, puedes elegir una ruta personalizada como custom-login, private-access o una similar. Utiliza letras minúsculas, números y guiones."
+
+msgid "If you forget your custom login URL, you may lose access to the WordPress dashboard until you complete the appropriate recovery procedure."
+msgstr "Si olvidas tu URL de acceso personalizada, podrías perder el acceso al escritorio de WordPress hasta completar el procedimiento de recuperación correspondiente."
+
+msgid "Important Security Notice"
+msgstr "Aviso de seguridad importante"
+
+msgid "Important:"
+msgstr "Importante:"
+
+msgid "Keep your custom login URL in a safe place. A custom URL complements, but does not replace, strong passwords and regular backups."
+msgstr "Guarda tu URL de acceso personalizada en un lugar seguro. Una URL personalizada complementa, pero no sustituye, las contraseñas seguras ni las copias de seguridad periódicas."
+
+msgid "Log In"
+msgstr "Iniciar sesión"
+
+msgid "Login failed. Please check your username and password."
+msgstr "No se pudo iniciar sesión. Comprueba tu nombre de usuario y contraseña."
+
+msgid "Manage your custom WordPress login address and review your access settings."
+msgstr "Administra tu dirección de acceso personalizada de WordPress y revisa la configuración de acceso."
+
+msgid "Password"
+msgstr "Contraseña"
+
+msgid "Remember Me"
+msgstr "Recuérdame"
+
+msgid "Save Settings"
+msgstr "Guardar configuración"
+
+msgid "Save this URL in a password manager or another secure location before logging out. You will need it to access your account again."
+msgstr "Antes de cerrar sesión, guarda esta URL en un gestor de contraseñas o en otro lugar seguro. La necesitarás para volver a acceder a tu cuenta."
+
+msgid "Security verification failed. Please reload the page and try again."
+msgstr "La verificación de seguridad ha fallado. Recarga la página e inténtalo de nuevo."
+
+msgid "The login slug must be a text value."
+msgstr "La ruta de acceso debe ser un valor de texto."
+
+msgid "Universal Login URL"
+msgstr "Universal Login URL"
+
+msgid "Username or Email Address"
+msgstr "Nombre de usuario o correo electrónico"
+
+msgid "You are not allowed to access this page."
+msgstr "No tienes permiso para acceder a esta página."
+
+msgid "Your custom login URL has been updated."
+msgstr "Tu URL de acceso personalizada se ha actualizado."
+
+msgid "Your custom login URL is the entry point to your WordPress administration area. Once you configure a custom login slug, this URL becomes your designated login address for accessing your WordPress dashboard."
+msgstr "Tu URL de acceso personalizada es la puerta de entrada al área de administración de WordPress. Una vez que configures una ruta personalizada, esa URL será la dirección designada para acceder al escritorio de WordPress."
+
+msgid "Your new login URL is:"
+msgstr "Tu nueva URL de acceso es:"

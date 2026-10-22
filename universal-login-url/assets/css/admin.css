@@ -1,0 +1,396 @@
+/**
+ * Universal Login URL — Admin interface
+ *
+ * @package UniversalLoginURL
+ */
+
+/* Main page */
+.ulurl-settings-wrap {
+	max-width: 1120px;
+	margin-top: 28px;
+	color: #1d2939;
+}
+
+.ulurl-settings-wrap,
+.ulurl-settings-wrap * {
+	box-sizing: border-box;
+}
+
+/* Page heading */
+.ulurl-page-header {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin: 0 0 30px;
+	padding: 0 0 24px;
+	border-bottom: 1px solid #e5eaf1;
+}
+
+.ulurl-page-icon {
+	display: flex;
+	flex: 0 0 54px;
+	align-items: center;
+	justify-content: center;
+	width: 54px;
+	height: 54px;
+	border: 1px solid #d8e7ff;
+	border-radius: 14px;
+	background: #edf4ff;
+	color: #1769e8;
+}
+
+.ulurl-page-icon .dashicons {
+	width: 27px;
+	height: 27px;
+	font-size: 27px;
+}
+
+.ulurl-page-heading {
+	min-width: 0;
+}
+
+.ulurl-page-heading h1 {
+	margin: 0 0 7px;
+	padding: 0;
+	color: #172b4d;
+	font-size: 26px;
+	font-weight: 650;
+	line-height: 1.3;
+}
+
+.ulurl-page-description {
+	margin: 0;
+	color: #66758a;
+	font-size: 14px;
+	line-height: 1.7;
+}
+
+/* Main settings card */
+.ulurl-settings-layout {
+	max-width: 100%;
+}
+
+.ulurl-settings-card {
+	overflow: hidden;
+	border: 1px solid #e0e7f0;
+	border-radius: 12px;
+	background: #fff;
+	box-shadow: 0 3px 12px rgba(31, 45, 61, 0.045);
+}
+
+.ulurl-card-header {
+	display: flex;
+	align-items: flex-start;
+	gap: 13px;
+	padding: 24px 28px;
+	border-bottom: 1px solid #e8edf4;
+	background: #fff;
+}
+
+.ulurl-card-heading-icon {
+	display: flex;
+	flex: 0 0 40px;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	background: #edf4ff;
+	color: #1769e8;
+}
+
+.ulurl-card-heading-icon .dashicons {
+	width: 21px;
+	height: 21px;
+	font-size: 21px;
+}
+
+.ulurl-card-header h2 {
+	margin: 1px 0 5px;
+	padding: 0;
+	color: #172b4d;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+.ulurl-card-header p {
+	margin: 0;
+	color: #66758a;
+	font-size: 13px;
+	line-height: 1.7;
+}
+
+/* Form layout */
+.ulurl-card-content {
+	padding: 24px 28px 28px;
+}
+
+.ulurl-card-content form {
+	margin: 0;
+}
+
+.ulurl-card-content .form-table {
+	margin: 0;
+	border: 0;
+}
+
+.ulurl-card-content .form-table th,
+.ulurl-card-content .form-table td {
+	display: block;
+	width: 100%;
+	padding: 0;
+	text-align: left;
+}
+
+.ulurl-card-content .form-table th {
+	margin: 0 0 10px;
+	padding-bottom: 0;
+	color: #26364b;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.ulurl-card-content .form-table td {
+	padding-bottom: 0;
+}
+
+.ulurl-card-content .form-table tr {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Input field */
+.ulurl-card-content input[type="text"] {
+	width: 100%;
+	max-width: 540px;
+	min-height: 46px;
+	padding: 10px 13px;
+	border: 1px solid #cbd5e1;
+	border-radius: 7px;
+	background: #fff;
+	color: #243247;
+	font-size: 14px;
+	box-shadow: none;
+	transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.ulurl-card-content input[type="text"]:hover {
+	border-color: #94a3b8;
+}
+
+.ulurl-card-content input[type="text"]:focus {
+	border-color: #1769e8;
+	box-shadow: 0 0 0 3px rgba(23, 105, 232, 0.13);
+	outline: none;
+}
+
+.ulurl-card-content input[type="text"]::placeholder {
+	color: #94a3b8;
+	opacity: 1;
+}
+
+.ulurl-card-content .description {
+	max-width: 760px;
+	margin: 10px 0 22px;
+	color: #66758a;
+	font-size: 13px;
+	line-height: 1.75;
+}
+
+/* Configured URL preview */
+.ulurl-login-url-preview {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+	margin: 20px 0;
+	padding: 16px 18px;
+	border: 1px solid #d6e5fb;
+	border-radius: 8px;
+	background: #f5f9ff;
+}
+
+.ulurl-login-url-preview strong {
+	color: #29476b;
+	font-size: 13px;
+}
+
+.ulurl-login-url-preview a {
+	overflow-wrap: anywhere;
+	color: #1769e8;
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.ulurl-login-url-preview a:hover {
+	color: #0b4fb3;
+	text-decoration: underline;
+}
+
+/* Security notice */
+.ulurl-security-notice {
+	margin-top: 26px;
+	padding: 20px 22px;
+	border: 1px solid #d5e5fb;
+	border-radius: 9px;
+	background: #f3f7fe;
+	color: #405773;
+}
+
+.ulurl-security-notice h3 {
+	display: flex;
+	align-items: center;
+	gap: 9px;
+	margin: 0 0 14px;
+	color: #174e96;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.ulurl-security-notice h3 .dashicons {
+	flex: 0 0 auto;
+	width: 20px;
+	height: 20px;
+	color: #1769e8;
+	font-size: 20px;
+}
+
+.ulurl-security-notice p {
+	margin: 0 0 11px;
+	color: #405773;
+	font-size: 13px;
+	line-height: 1.8;
+}
+
+.ulurl-security-notice p:last-child {
+	margin-bottom: 0;
+}
+
+.ulurl-security-notice strong {
+	color: #29476b;
+}
+
+/* Save button */
+.ulurl-card-content .submit {
+	margin: 25px 0 0;
+	padding: 0;
+}
+
+.ulurl-card-content .ulurl-submit-button {
+	min-height: 43px;
+	margin: 0;
+	padding: 0 20px;
+	border: 1px solid #1769e8;
+	border-radius: 7px;
+	background: #1769e8;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 41px;
+	box-shadow: none;
+	transition: background 0.18s ease, border-color 0.18s ease;
+}
+
+.ulurl-card-content .ulurl-submit-button:hover,
+.ulurl-card-content .ulurl-submit-button:focus {
+	border-color: #0d54c5;
+	background: #0d54c5;
+	color: #fff;
+}
+
+.ulurl-card-content .ulurl-submit-button:focus-visible {
+	outline: 3px solid rgba(23, 105, 232, 0.25);
+	outline-offset: 2px;
+}
+
+/* WordPress settings messages */
+.ulurl-settings-wrap > .notice,
+.ulurl-settings-wrap > .updated,
+.ulurl-settings-wrap > .error {
+	margin: 0 0 20px;
+}
+
+.ulurl-settings-wrap .settings-error {
+	border-radius: 5px;
+}
+
+/* Footer note */
+.ulurl-page-footer {
+	display: flex;
+	align-items: flex-start;
+	gap: 9px;
+	margin: 17px 2px 0;
+	color: #718096;
+}
+
+.ulurl-page-footer .dashicons {
+	flex: 0 0 auto;
+	margin-top: 2px;
+	color: #718096;
+	font-size: 17px;
+}
+
+.ulurl-page-footer p {
+	margin: 0;
+	font-size: 12px;
+	line-height: 1.7;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 782px) {
+	.ulurl-settings-wrap {
+		margin: 20px 12px 0 0;
+	}
+
+	.ulurl-page-header {
+		align-items: flex-start;
+		gap: 12px;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+	}
+
+	.ulurl-page-icon {
+		flex-basis: 44px;
+		width: 44px;
+		height: 44px;
+		border-radius: 11px;
+	}
+
+	.ulurl-page-icon .dashicons {
+		font-size: 23px;
+	}
+
+	.ulurl-page-heading h1 {
+		font-size: 22px;
+	}
+
+	.ulurl-card-header,
+	.ulurl-card-content {
+		padding: 20px;
+	}
+
+	.ulurl-security-notice {
+		padding: 16px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.ulurl-card-header {
+		gap: 10px;
+	}
+
+	.ulurl-card-heading-icon {
+		flex-basis: 34px;
+		width: 34px;
+		height: 34px;
+	}
+
+	.ulurl-card-heading-icon .dashicons {
+		font-size: 19px;
+	}
+}
