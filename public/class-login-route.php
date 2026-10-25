@@ -91,7 +91,6 @@ final class Login_Route {
 				$slug,
 				false
 			);
-
 			flush_rewrite_rules( false );
 		}
 	}
@@ -252,9 +251,8 @@ final class Login_Route {
 			exit;
 		}
 
-		$error_message = '';
-		$username      = '';
-
+		$error_message  = '';
+		$username       = '';
 		$request_method = isset( $_SERVER['REQUEST_METHOD'] )
 			? strtoupper(
 				sanitize_text_field(
@@ -355,7 +353,8 @@ final class Login_Route {
 		string $username,
 		string $redirect_to
 	): void {
-		$login_url = $this->get_custom_login_url();
+		$login_url         = $this->get_custom_login_url();
+		$lost_password_url = wp_lostpassword_url();
 		?>
 		<!DOCTYPE html>
 		<html <?php language_attributes(); ?>>
@@ -371,6 +370,7 @@ final class Login_Route {
 					color: #3c434a;
 					font-family: Arial, sans-serif;
 				}
+
 				.ulurl-login {
 					max-width: 360px;
 					margin: 40px auto;
@@ -380,16 +380,19 @@ final class Login_Route {
 					border-radius: 8px;
 					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 				}
+
 				.ulurl-login h1 {
 					margin: 0 0 24px;
 					font-size: 25px;
 					text-align: center;
 				}
+
 				.ulurl-login label {
 					display: block;
 					margin: 16px 0 6px;
 					font-weight: 600;
 				}
+
 				.ulurl-login input[type="text"],
 				.ulurl-login input[type="password"] {
 					box-sizing: border-box;
@@ -398,9 +401,11 @@ final class Login_Route {
 					border: 1px solid #8c8f94;
 					border-radius: 4px;
 				}
+
 				.ulurl-login .ulurl-remember {
 					margin: 16px 0;
 				}
+
 				.ulurl-login button {
 					width: 100%;
 					padding: 12px;
@@ -411,15 +416,33 @@ final class Login_Route {
 					font-size: 16px;
 					cursor: pointer;
 				}
+
 				.ulurl-login button:hover {
 					background: #135e96;
 				}
+
 				.ulurl-error {
 					padding: 12px;
 					border-left: 4px solid #d63638;
 					background: #fcf0f1;
 					color: #8a2424;
 				}
+
+				.ulurl-login .ulurl-lostpassword {
+					margin-top: 16px;
+					text-align: center;
+				}
+
+				.ulurl-login .ulurl-lostpassword a {
+					color: #2271b1;
+					text-decoration: none;
+				}
+
+				.ulurl-login .ulurl-lostpassword a:hover {
+					color: #135e96;
+					text-decoration: underline;
+				}
+
 				.ulurl-login .ulurl-back {
 					margin-top: 20px;
 					text-align: center;
@@ -453,6 +476,7 @@ final class Login_Route {
 					<label for="ulurl-user">
 						<?php esc_html_e( 'Username or Email Address', 'universal-login-url' ); ?>
 					</label>
+
 					<input
 						type="text"
 						name="log"
@@ -465,6 +489,7 @@ final class Login_Route {
 					<label for="ulurl-password">
 						<?php esc_html_e( 'Password', 'universal-login-url' ); ?>
 					</label>
+
 					<input
 						type="password"
 						name="pwd"
@@ -488,6 +513,12 @@ final class Login_Route {
 						<?php esc_html_e( 'Log In', 'universal-login-url' ); ?>
 					</button>
 				</form>
+
+				<p class="ulurl-lostpassword">
+					<a href="<?php echo esc_url( $lost_password_url ); ?>">
+						<?php esc_html_e( 'Forgot your password?', 'universal-login-url' ); ?>
+					</a>
+				</p>
 
 				<p class="ulurl-back">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
